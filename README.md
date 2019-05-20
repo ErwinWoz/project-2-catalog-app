@@ -44,14 +44,17 @@ Traceback (most recent call last):
     import httplib2
 ImportError: No module named httplib2
 ```
-1. To download missing module run in terminal:
+9. To download missing module run in terminal:
 `pip install --user httplib2`
 Use this command do download all needed modules
-1. Open your web browser to this URL: http://localhost:5000
-1. In order to add, edit and delete items in categories you have to login first with your Google account.
+10. Open your web browser to this URL: http://localhost:5000
+11. In order to add, edit and delete items in categories you have to login first with your Google account.
+![item_edit_delete](https://user-images.githubusercontent.com/42820261/57992268-12ac9b00-7a68-11e9-970f-79442cae9df3.png)
 
+![item_add](https://user-images.githubusercontent.com/42820261/57992281-21934d80-7a68-11e9-9817-20f7e991ba13.png)
 
-1. This app also implements API endpoints with responses formatted in JSON. ( /JSON )
+12. This app also implements API endpoints with responses formatted in JSON. ( /JSON )
+![categories_json](https://user-images.githubusercontent.com/42820261/57992287-2d7f0f80-7a68-11e9-8688-0f21c3a4b7a6.png)
 
 
 
