@@ -35,15 +35,16 @@ This project is run in a virutal machine created using Vagrant
 `cd /vagrant/catalog`
 1. run script
 `python application.py`
-When ImportError - you might need to download some libraries to run this applicaton. All needed libraries are on top of the application.py file. Depending on your error message download libraries using terminal.
-import error example: 
-`$ python application.py`
-`Traceback (most recent call last):`
-  `File "application.py", line 3, in <module>`
-    `import httplib2`
-`ImportError: No module named httplib2`
-
-To download missing module run in terminal:
+1. When ImportError - you might need to download some libraries to run this applicaton. All needed libraries are on top of the application.py file. Depending on your error message download libraries using terminal.
+1. import error example:
+``` bash 
+$ python application.py
+Traceback (most recent call last):
+  File "application.py", line 3, in <module>
+    import httplib2
+ImportError: No module named httplib2
+```
+1. To download missing module run in terminal:
 `pip install --user httplib2`
 Use this command do download all needed modules
 1. Open your web browser to this URL: http://localhost:5000
