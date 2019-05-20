@@ -1,0 +1,44 @@
+body{
+    background-color:#c4ccd3;
+  }
+  
+  .navbar{
+    background-color:#062445;
+  }
+  .navbar-data{
+    padding:5px;
+    font-size: 25px;
+    color: #fff
+  }
+  
+  .content-block{
+    background-color:#fff;
+    margin: 5px auto;
+    padding: 10px 10px 30px;
+  }
+  
+  .category-block{
+    border-right: grey solid 1px
+  }
+
+  .loop-text{
+    color: #c13d4a;
+  }
+
+  .add-border{
+    border-right:black solid 2px;
+  }
+
+  .just-grey{
+    color: grey!important; /* NOTE:adding !important to force styling is a bad practice */
+  }
+
+  .sign-text{
+    color: #fff!important;
+  }
+
+  .sign{
+    float:right;
+    margin-top:5px;
+    background-color: #ee1227;
+  }

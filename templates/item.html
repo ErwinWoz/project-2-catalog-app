@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %} {{item.title}} {% endblock %}
+
+{% block content %}
+<h2>{{item.title}}</h2>
+<p class="lead">{{item.description}}</p>
+{% if login %}
+<a class="loop-text" href="{{url_for('editItem', category = category, item = item.title)}}">Edit<span style="color:black;"> |</span></a>
+<a class="loop-text" href="{{url_for('deleteItem', category = category, item = item.title)}}">Delete</a>  
+{% endif %}
+{% endblock %}

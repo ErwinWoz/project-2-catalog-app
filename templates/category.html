@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} {{category.name}} {% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4 category-block">
+        <h2>Categories:</h2>
+        {% for category in categories %}
+        <a href="{{url_for('categoryView', category = category.name)}}"><h4 class="loop-text">{{category.name}}</h4></a>
+        {% endfor %}
+    </div>
+    <div class="col-md-8 items-block">
+        {% if login %}
+        <p>
+        <a class="loop-text" href="{{url_for('newItem')}}"><h4>Add Item</h4></a>
+        </p>
+        {% endif %}
+        <h2>{{category.name}} items: ({{items|length}})</h2>
+        {% for item in items %}
+        <a class="loop-text" href="{{url_for('itemView', category = item.categories.name, item = item.title)}}"><h4>{{item.title}}</a></h4>        
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

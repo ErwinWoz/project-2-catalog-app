@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Confirm delete{% endblock %}
+
+{% block content %}
+<form method = "post">
+    <h2>Delete Item</h2>
+    <p class="lead">Are you sure you want to delete?</p>
+    <input type="submit" value="Submit">
+    <button><a href="{{url_for('itemView', category = category, item = item)}}">Cancel</a></button>
+</form>
+{% endblock %}
